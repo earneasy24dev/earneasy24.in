@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Cunia";
+    src: url("assets/fonts/Cunia/Proxima.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Cunia-Regular";
+    src: url("assets/fonts/Cunia/Proxima-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Poppins-Regular";
+    src: url("assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-Bold";
+    src: url("assets/fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Poppins-Black";
+    src: url("assets/fonts/Poppins/Poppins-Black.ttf") format("truetype");
+  }
+  h6 {
+    @apply font-poppinsbold;
+  }
+  h1 {
+    @apply font-poppinsbold text-3xl;
+  }
+
+ 
+
+}
+
+*:focus {
+  outline: none !important;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #adb9ca !important;
+  opacity: 1 !important;
+  /* Firefox */
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <style>
+      .unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      (function (w, d, s, l, i) {
+        w["scSdkId"] = i;
+        w[l] = w[l] || [];
+        w.scq = function (eventName, eventType, p) {
+          var props = p || {};
+          w[l].push({
+            eventName: eventName,
+            eventType: eventType,
+            meta: props,
+            eventFireTs: Date.now(),
+          });
+        };
+        w.scq("PAGE_VIEW", "AUTO", {
+          pageUrl: w.location.href,
+        });
+        var scr = d.createElement(s);
+        scr.type = "text/javascript";
+        scr.async = true;
+        scr.src = "https://sc-events-sdk.sharechat.com/web-sdk.js";
+        var x = d.getElementsByTagName(s)[0];
+        x.parentNode.insertBefore(scr, x);
+      })(window, document, "script", "scLayer", "kTdRdfS7SV");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=672797220779999&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P9PGHFSKX7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P9PGHFSKX7');
+</script>
+
+   
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": {
+          "@type": "Question",
+          "name": "",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": ""
+          }
+        }
+      }
+    </script>
+  </head>
+
+  <body class="unselectable">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>

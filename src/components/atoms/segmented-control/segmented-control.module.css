@@ -1,0 +1,48 @@
+.hide-input {
+    @apply hidden h-0 w-0 opacity-0 overflow-hidden whitespace-nowrap;
+  }
+  
+  .base {
+    @apply bg-gray-100 p-1 flex overflow-hidden relative rounded;
+    @apply font-semibold text-gray-700 text-sm;
+    @apply border-[0.4px] border-gray-300;
+  }
+  
+  .base.sm {
+    @apply p-[2px];
+  }
+  .label {
+    /* @apply py-[5px] px-[10px]; */
+    @apply py-[6px] px-4;
+    @apply block cursor-pointer rounded;
+    @apply flex text-center items-center justify-center;
+  }
+  
+  .label.sm {
+    @apply py-[4px] px-[8px] text-xs;
+  }
+  .label:not(.active) {
+    @apply hover:text-gray-700;
+  }
+  .label.active {
+    @apply text-white;
+  }
+  .control {
+    @apply relative box-border z-[2];
+    @apply transition-colors duration-200 ease-in-out border-gray-400;
+    flex: 1 1 0%;
+  }
+  
+  .full-width {
+    @apply w-full;
+  }
+  /* .control:not(:firs-of-type) {
+    @apply border-l;
+  } */
+  
+  .active-indicator {
+    @apply rounded shadow-sm absolute bg-deepBlue z-[1];
+    transition: transform 200ms cubic-bezier(0.51, 0.3, 0, 1.21) 0s,
+      width 100ms cubic-bezier(0.51, 0.3, 0, 1.21) 0s;
+  }
+  
