@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const instance = axios.create({
-  baseURL: "https://api.earneasy24.com/api/",
+  // baseURL: "https://api.earneasy24.com/api/",
+  baseURL:"https://test-api.earneasy24.net/api/",
   headers: {
     "Content-Type": "application/json",
   },
